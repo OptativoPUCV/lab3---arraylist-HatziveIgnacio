@@ -244,3 +244,17 @@ arraylist.c:57:46: error: expected ‘;’ before ‘aux_size’
       |       ~~~~~~~~                                
 Compilation failed
 4107d2d
+Fri 31 Mar 2023 05:29:16 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:54:3: error: ‘aux_size’ undeclared (first use in this function)
+   54 |   aux_size = l->size;
+      |   ^~~~~~~~
+arraylist.c:54:3: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:55:15: error: ‘aux’ undeclared (first use in this function)
+   55 |   while (i != aux)
+      |               ^~~
+Compilation failed
+fd2d290

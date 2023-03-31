@@ -54,7 +54,7 @@ void push(ArrayList * l, void * data, int i)
   aux_size = l->size;
   while (i != aux)
     {
-      l->data[aux_size+1] = l->data[aux_size] 
+      l->data[aux_size+1] = l->data[aux_size];
       aux_size--;
     }
   l->data[i] = data;
