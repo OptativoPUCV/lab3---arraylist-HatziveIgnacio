@@ -48,6 +48,7 @@ void push(ArrayList * l, void * data, int i)
   {
     l->data =  realloc(l->data, (l->capacity*2) * sizeof(void*));
     l->capacity *= 2;
+    l->size++;
   }
   //
   // mover a la derecha
@@ -58,6 +59,7 @@ void push(ArrayList * l, void * data, int i)
       aux_size--;
     }
   l->data[i] = data;
+  l->size++;
 }
 
 void* pop(ArrayList * l, int i){
