@@ -363,3 +363,14 @@ arraylist.c:55:7: error: unused variable ‘aux_size’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 d66e2e0
+Fri 31 Mar 2023 05:35:28 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:55:7: error: unused variable ‘aux_size’ [-Werror=unused-variable]
+   55 |   int aux_size = l->size;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5813f75
