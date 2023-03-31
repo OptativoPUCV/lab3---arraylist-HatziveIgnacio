@@ -160,3 +160,16 @@ Fri 31 Mar 2023 05:14:26 PM UTC:
  tests:  2|5
 total_score: 15/70
 49f3cdf
+Fri 31 Mar 2023 05:15:50 PM UTC: 
+ arraylist.c | 12 ++++--------
+ 1 file changed, 4 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:36:60: error: expected ‘;’ before ‘}’ token
+   36 |   l->data =  realloc(data, (l->capacity*2) * sizeof(void*))
+      |                                                            ^
+      |                                                            ;
+   37 |   }
+      |   ~                                                         
+Compilation failed
+d05cdb3
