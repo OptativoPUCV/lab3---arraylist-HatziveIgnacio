@@ -404,3 +404,14 @@ Fri 31 Mar 2023 06:09:53 PM UTC:
  tests:  5|3
 total_score: 30/70
 b34d137
+Fri 31 Mar 2023 06:10:25 PM UTC: 
+ arraylist.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+   68 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6334c6d
