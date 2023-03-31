@@ -67,10 +67,10 @@ void* pop(ArrayList * l, int i)
   void *dato = l->data[i];
   if( i>0)
   {
-    void *dato = l->data[l->capacity + i];
-    for(int pos=l->capacity + i ; pos<l->size; pos--)
+    void *dato = l->data[l->size + i];
+    for(int pos=l->size + i ; pos<l->size; pos--)
     {
-      l->data[pos] = l->data[pos+1];
+      l->data[pos] = l->data[pos-1];
     }
     return dato;
   }
