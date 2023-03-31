@@ -33,7 +33,8 @@ void append(ArrayList * l, void * data){
 
   if( l->data[l->size] != NULL)
   {
-    
+    l->data[l->size] = data;
+    l->size++;
   }
 }
 
@@ -57,3 +58,4 @@ int get_size(ArrayList * l){
 void clean(ArrayList * l){
     
 }
+ 
