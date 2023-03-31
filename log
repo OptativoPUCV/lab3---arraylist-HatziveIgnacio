@@ -12,3 +12,13 @@ arraylist.c:16:3: error: expected ‘,’ or ‘;’ before ‘if’
       |   ^~
 Compilation failed
 9c64fce
+Fri 31 Mar 2023 02:14:05 PM UTC: 
+ arraylist.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:3: error: expected ‘,’ or ‘;’ before ‘if’
+   16 |   if(lista==NULL)
+      |   ^~
+Compilation failed
+9af9923
