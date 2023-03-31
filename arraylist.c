@@ -69,7 +69,7 @@ void* pop(ArrayList * l, int i)
   // mover izq
   for(int pos=i ; pos<l->size; pos++)
     {
-      l->data[pos] = l->data[pos+1]
+      l->data[pos] = l->data[pos+1];
     }
 
   return dato;
