@@ -494,3 +494,9 @@ arraylist.c:79:8: error: ‘pos’ undeclared (first use in this function); did 
 arraylist.c:79:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d4343b6
+Fri 31 Mar 2023 06:20:08 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|2
+total_score: 40/70
+4f3d63e
