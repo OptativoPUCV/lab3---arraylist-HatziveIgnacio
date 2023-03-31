@@ -31,7 +31,7 @@ ArrayList *createList(void) {
 
 void append(ArrayList * l, void * data){
 
-  if( l->data[size] != NULL)
+  if( l->data[l->size] != NULL)
   {
     
   }
