@@ -345,3 +345,21 @@ arraylist.c:56:3: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 aa5a9b5
+Fri 31 Mar 2023 05:35:22 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:56:43: error: statement with no effect [-Werror=unused-value]
+   56 |   for ( int aux_size = l->size;; aux_size > i; aux_size--)
+      |                                  ~~~~~~~~~^~~
+arraylist.c:56:46: error: expected ‘)’ before ‘;’ token
+   56 |   for ( int aux_size = l->size;; aux_size > i; aux_size--)
+      |       ~                                      ^
+      |                                              )
+arraylist.c:55:7: error: unused variable ‘aux_size’ [-Werror=unused-variable]
+   55 |   int aux_size = l->size;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d66e2e0
