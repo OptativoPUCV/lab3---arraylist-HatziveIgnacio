@@ -482,3 +482,15 @@ arraylist.c:71:39: error: expected ‘;’ before ‘)’ token
 arraylist.c:71:39: error: expected statement before ‘)’ token
 Compilation failed
 aacb8bc
+Fri 31 Mar 2023 06:19:50 PM UTC: 
+ arraylist.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:79:8: error: ‘pos’ undeclared (first use in this function); did you mean ‘pop’?
+   79 |   for( pos=i ; pos<l->size; pos++)
+      |        ^~~
+      |        pop
+arraylist.c:79:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d4343b6
