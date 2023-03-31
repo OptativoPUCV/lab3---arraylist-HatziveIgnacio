@@ -462,3 +462,23 @@ Fri 31 Mar 2023 06:16:52 PM UTC:
  tests:  9|2
 total_score: 40/70
 d2c413d
+Fri 31 Mar 2023 06:19:25 PM UTC: 
+ arraylist.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:71:5: error: expected ‘,’ or ‘;’ before ‘for’
+   71 |     for(int pos=i ; pos<l->size; pos++)
+      |     ^~~
+arraylist.c:71:21: error: ‘pos’ undeclared (first use in this function); did you mean ‘pop’?
+   71 |     for(int pos=i ; pos<l->size; pos++)
+      |                     ^~~
+      |                     pop
+arraylist.c:71:21: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:71:39: error: expected ‘;’ before ‘)’ token
+   71 |     for(int pos=i ; pos<l->size; pos++)
+      |                                       ^
+      |                                       ;
+arraylist.c:71:39: error: expected statement before ‘)’ token
+Compilation failed
+aacb8bc
