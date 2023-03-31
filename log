@@ -2,3 +2,13 @@ mi., 15 de feb. de 2023 12:35:23:
  tests:  0|6
 total_score: 0/70
 7964391
+Fri 31 Mar 2023 02:13:36 PM UTC: 
+ arraylist.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:3: error: expected ‘,’ or ‘;’ before ‘if’
+   16 |   if(lista==NULL)
+      |   ^~
+Compilation failed
+9c64fce
