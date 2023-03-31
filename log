@@ -135,3 +135,22 @@ arraylist.c:41:56: error: expected expression before ‘void’
       |                                                        ^~~~
 Compilation failed
 4df0a53
+Fri 31 Mar 2023 05:13:47 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:41:46: error: invalid operands to binary * (have ‘void *’ and ‘long unsigned int’)
+   41 |     l->data = realloc(data, (l->capacity)*2) *sizeof(void*) );
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+      |               |
+      |               void *
+arraylist.c:41:60: error: expected ‘;’ before ‘)’ token
+   41 |     l->data = realloc(data, (l->capacity)*2) *sizeof(void*) );
+      |                                                            ^~
+      |                                                            ;
+arraylist.c:41:61: error: expected statement before ‘)’ token
+   41 |     l->data = realloc(data, (l->capacity)*2) *sizeof(void*) );
+      |                                                             ^
+Compilation failed
+eda83d7
