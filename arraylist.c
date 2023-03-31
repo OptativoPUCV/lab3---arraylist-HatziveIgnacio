@@ -98,6 +98,6 @@ void clean(ArrayList * l)
 {
   l->size = 0;
   l->capacity = 2;
-    
+  l->data = malloc(sizeof(void *)*2);
 }
  
