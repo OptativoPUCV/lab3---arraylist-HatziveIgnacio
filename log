@@ -374,3 +374,9 @@ arraylist.c:55:7: error: unused variable ‘aux_size’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 5813f75
+Fri 31 Mar 2023 05:35:38 PM UTC: 
+ arraylist.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|4
+total_score: 20/70
+e9e7444
