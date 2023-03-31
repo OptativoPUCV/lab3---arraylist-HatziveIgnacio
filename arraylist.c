@@ -52,7 +52,7 @@ void push(ArrayList * l, void * data, int i)
   //
   // mover a la derecha
   aux_size = l->size;
-  while (i != aux)
+  while (i != aux_size)
     {
       l->data[aux_size+1] = l->data[aux_size];
       aux_size--;
