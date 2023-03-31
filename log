@@ -583,3 +583,13 @@ Fri 31 Mar 2023 06:36:14 PM UTC:
  tests:  16|0
 total_score: 70/70
 f590320
+Fri 31 Mar 2023 06:36:21 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:101:9: error: incompatible types when assigning to type ‘ArrayList’ {aka ‘struct ArrayList’} from type ‘void *’
+  101 |   *l =  malloc(sizeof(ArrayList));
+      |         ^~~~~~
+Compilation failed
+f361b82
