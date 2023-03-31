@@ -64,7 +64,6 @@ void push(ArrayList * l, void * data, int i)
 
 void* pop(ArrayList * l, int i)
 {
-  void *dato = l->data[i];
   if( i>0)
   {
     void *dato = l->data[l->size + i];
@@ -75,10 +74,9 @@ void* pop(ArrayList * l, int i)
     return dato;
   }
   // mover izq
-  
+  void *dato = l->data[i];
   for(int pos=i ; pos<l->size-1; pos++)
     {
-      void *dato = l->data[i];
       l->data[pos] = l->data[pos+1];
     }
   l->size--;
