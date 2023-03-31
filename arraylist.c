@@ -31,6 +31,10 @@ ArrayList *createList(void) {
 
 void append(ArrayList * l, void * data){
 
+  if(l[size]->data != NULL)
+  {
+    
+  }
 }
 
 void push(ArrayList * l, void * data, int i){
