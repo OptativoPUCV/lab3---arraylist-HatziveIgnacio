@@ -98,7 +98,7 @@ void clean(ArrayList * l)
 {
   l->size = 0;
   l->capacity = 2;
-  *l =  malloc(sizeof(ArrayList));
+  l =  malloc(sizeof(ArrayList));
   l->data = malloc(sizeof(void *)*2);
 }
  

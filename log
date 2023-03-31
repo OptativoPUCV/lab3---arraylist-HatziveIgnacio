@@ -593,3 +593,9 @@ arraylist.c:101:9: error: incompatible types when assigning to type ‘ArrayList
       |         ^~~~~~
 Compilation failed
 f361b82
+Fri 31 Mar 2023 06:36:27 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  16|0
+total_score: 70/70
+11f2860
