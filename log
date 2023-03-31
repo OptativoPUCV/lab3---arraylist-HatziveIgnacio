@@ -40,3 +40,15 @@ arraylist.c:34:8: error: ‘size’ undeclared (first use in this function); did
 arraylist.c:34:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 3131bf4
+Fri 31 Mar 2023 05:05:20 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:34:15: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   34 |   if( l->data[size] != NULL)
+      |               ^~~~
+      |               dysize
+arraylist.c:34:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d4d0e91
