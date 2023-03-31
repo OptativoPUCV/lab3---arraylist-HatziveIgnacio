@@ -308,3 +308,13 @@ Fri 31 Mar 2023 05:33:42 PM UTC:
  tests:  3|4
 total_score: 20/70
 314da6e
+Fri 31 Mar 2023 05:34:02 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:56:20: error: expected expression before ‘>’ token
+   56 |   while (aux_size => i)
+      |                    ^
+Compilation failed
+b734fee
