@@ -530,3 +530,14 @@ Fri 31 Mar 2023 06:28:07 PM UTC:
  tests:  9|2
 total_score: 40/70
 6861e4c
+Fri 31 Mar 2023 06:29:16 PM UTC: 
+ arraylist.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:81:13: error: unused variable ‘dato’ [-Werror=unused-variable]
+   81 |       void *dato = l->data[i];
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7f76427
